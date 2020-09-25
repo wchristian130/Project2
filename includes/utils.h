@@ -1,6 +1,12 @@
-#include <vector>
+#ifndef UTILS_H_
+#define UTILS_H_
 
-void sortData(const SORT_ORDER &mySortOrder,vector<process> &myProcesses);
-process getNext(vector<process> &myProcesses);
-int getSize(vector<process> &myProcesses);
-int handleMissingData(vector<process> &myProcesses;
+#include <vector>
+#include "constants.h"
+
+void sortData(const SORT_ORDER &mySortOrder,std::vector<process> &myProcesses);
+process getNext(std::vector<process> &myProcesses);
+int getSize(std::vector<process> &myProcesses);
+int handleMissingData(std::vector<process> &myProcesses);
+
+#endif
